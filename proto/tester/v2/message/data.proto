@@ -1,0 +1,9 @@
+syntax = "proto3";
+import "test_proto/v1/message/data.proto";
+
+package tester.v2.message;
+
+message DataTest {
+  double data = 1;
+  test_proto.v1.message.Data this = 2;
+}
