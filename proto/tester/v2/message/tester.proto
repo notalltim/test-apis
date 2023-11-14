@@ -1,10 +1,12 @@
 syntax = "proto3";
 
 import "google/protobuf/any.proto";
+import "tester/v2/message/data.proto";
 
 package tester.v2.message;
 
-message Tesr {
+message Tester {
   double data = 1;
   google.protobuf.Any test = 2;
+  tester.v2.message.DataTest test_data = 3;
 }
